@@ -1,0 +1,47 @@
+/* Estilo para aumentar el tamaño de la palabra 'pre' */
+.grande {
+    font-size: 1.5em; /* Aumenta el tamaño de la palabra */
+    font-weight: bold; /* Opcional, para poner en negrita */
+}
+
+/* Estilo para colocar la línea encima de la frase */
+.linea-arriba {
+    position: relative;
+    display: inline-block;
+    padding-top: 5px; /* Ajusta el espacio entre la línea y el texto */
+}
+
+.linea-arriba::before {
+    content: "";
+    position: absolute;
+    top: -2px; /* Ajusta la posición de la línea hacia arriba */
+    left: 0;
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: black; /* Color de la línea */
+}
+
+/* Estilo para la palabra 'azul' */
+.azul-modificado {
+    color: blue; /* Cambia el color de la palabra a azul */
+    text-decoration: line-through; /* Aplica el tachado */
+    font-size: 2em; /* Aumenta el tamaño de la fuente */ 
+   display: inline-block; /* Necesario para aplicar desplazamiento vertical */
+    transform: translateY(20px); /* Mueve solo la palabra 20 píxeles hacia abajo */
+}
+
+/* Estilo para la palabra 'verde' */
+.verde-modificado {
+    color: green; /* Cambia el color de la palabra a verde */
+    text-decoration: underline; /* subraya texto */
+    font-size: 1.5em; /* Aumenta el tamaño de la fuente */
+    display: inline-block; /* Necesario para aplicar desplazamiento vertical */
+    transform: translateY(-10px); /* Mueve solo la palabra 20 píxeles hacia abajo */
+}
+
+/*mover texto hacia arriba*/
+.subir-texto {
+    transform: translateY(-10px); /* Mueve solo la palabra 20 píxeles hacia abajo */
+}
+
+
